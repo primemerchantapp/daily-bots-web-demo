@@ -19,7 +19,7 @@ export async function POST(request: Request) {
     max_duration: defaultMaxDuration,
     services: { ...defaultServices, ...services },
     api_keys: {
-      openai: process.env.OPENAI_API_KEY,
+      openai: process.env.TOGETHERAI_API_KEY,
       grok: process.env.GROK_API_KEY,
       gemini: process.env.GEMINI_API_KEY,
     },
